@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Schedular :: To Do List</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="./query.js"></script>
+</head>
+
+<body>
+    <header></header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">My Todo List</a></li>
+            <li><a href="activitytracker.html">Activity Tracker</a></li>
+            <li><a href="contacts.html">My Contacts</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>
+            <span>Today</span><small>Sun 13 Dec</small>
+        </h1>
+        <button type="button" class="btn-add" id="btnAdd"><span>+ </span> Add New</button>
+
+        <div id="container">
+            <form  method="POST" name="taskForm" id="taskForm">
+                <div class="row">
+                <div class="col-25">
+                    <label for="tDate">Select Date <span>*</span></label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="tDate" name="tDate" placeholder="Select Date">
+                    <span class="error"></span>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="title">Title <span>*</span></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="title" name="title" placeholder="Enter task description">
+                    <span class="error"></span>
+                </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel" id="btnCancel">
+                </div>
+            </form>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>
