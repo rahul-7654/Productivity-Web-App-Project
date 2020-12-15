@@ -21,12 +21,12 @@
     
     <main>
         <h1>
-            <span>Today</span><small>Sun 13 Dec</small>
+            <span>Today</span><small id="today"></small>
         </h1>
         <button type="button" class="btn-add" id="btnAdd"><span>+ </span> Add New</button>
 
         <div id="container">
-            <form  method="POST" name="taskForm" id="taskForm">
+            <form  action="#" id="taskForm">
                 <div class="row">
                 <div class="col-25">
                     <label for="tDate">Select Date <span>*</span></label>
@@ -50,6 +50,11 @@
                     <input type="button" value="Cancel" id="btnCancel">
                 </div>
             </form>
+        </div>
+        <div>
+            <p class="norecord"></p>
+            <ul class="todo-items"></ul>
+        </div>
     </main>
     
     <footer></footer>
