@@ -11,7 +11,7 @@ body {
 }
 header {
 	height: 100px;
-	background: url('images/logo.gif') no-repeat 25px;
+	background: url('../images/logo.gif') no-repeat 25px;
 }
 nav	{
 	width: 235px;
@@ -23,7 +23,7 @@ nav ul {
 nav ul li a:link, nav ul li a:visited, main h2 {
 	font-size: 14px;
 	font-weight: bold;
-	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	background: #dfe3e6 url('../images/bullet.gif') no-repeat 7px center;
 	padding: 3px 0 3px 20px;
 	border: solid #929ca4 1px;
 	color: #cc1c0d;
@@ -50,7 +50,7 @@ h3 {
 }
 footer {
 	height: 35px;
-	background: url('images/footer.gif');
+	background: url('../images/footer.gif');
 	clear: both;
 }
 h1 {
@@ -68,10 +68,12 @@ h1 small {
 .btn-add {
 	cursor: pointer;
     background-color: transparent;
-    border: none;
 	text-align: left;
-    width: 100%;
-    padding: 0 0 8px;
+	padding: 0 0 8px;
+	border: 0px;
+}
+button:focus {
+	outline: none;
 }
 button span {
 	color: #cc1c0d;
@@ -145,6 +147,15 @@ input[type=submit]:hover {
 	margin-top: 6px;
 }
 
+.leftCol-75 {
+	float: left;
+	width: 75%;
+}
+.rightCol-25 {
+	float: right;
+	width: 25%;
+}
+
 /* Clear floats after the columns */
 .row:after {
 	content: "";
@@ -178,7 +189,13 @@ input[type=submit]:hover {
   .item span {
 	  color: gray;
 	  font-size: .8em;
-	  margin-left: 31px;
+  }
+  .ml31 {
+	margin-left: 31px;
+  }
+  .item p{
+	color: gray;
+	font-size: .8em;
   }
   
   .item:first-child {
@@ -196,22 +213,39 @@ input[type=submit]:hover {
   .checkbox {
 	margin-right: 10px;
   }
-  .norecord {
-	  color: gray;
-	  display: block;
-  }
-
-  main ul {
+.norecord {
+	color: gray;
+	display: block;
+}
+main ul {
 	list-style-type: none;
-  }
-  .delete-button {
+}
+.delete-button {
 	background-color: red;
 	color: white;
 	padding: 10px;
 	border-radius: 4px;
 	cursor: pointer;
 	float: right;
-  }
-  .checked { 
+	border: none;
+}
+.mt18 {
+	margin-top: 18%;
+}
+.checked { 
 	text-decoration: line-through;
-  }
+}
+.contact {
+	border-radius: 5px;
+	/* background-color: #f2f2f2; */
+	padding: 20px;
+	margin-top: 30px;
+	width: 100%;
+}
+.contacts {
+	border-radius: 5px;
+	/* background-color: #f2f2f2; */
+	padding: 10px;
+	margin-top: 30px;
+	width: 100%;
+}

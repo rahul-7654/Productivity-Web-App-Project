@@ -31,20 +31,19 @@ $(document).ready(function() {
         var title = $("#title").val().trim();
         
         if(taskDate == "") {
-			$("#tDate").next().text("This field is required");
-			isValid = false;
-		} else {
-			$("#tDate").next().text("");
+          $("#tDate").next().text("This field is required");
+          isValid = false;
+        } else {
+			    $("#tDate").next().text("");
         }
         
         if(title == "") {
-			$("#title").next().text("This field is required");
-			isValid = false;
-		} else {
-			$("#title").next().text("");
+          $("#title").next().text("This field is required");
+          isValid = false;
+        } else {
+			    $("#title").next().text("");
         }
 
-        
         if (isValid) {
             const todo = {
                 id: parseInt(Math.random() * 100000),
@@ -122,7 +121,7 @@ $(document).ready(function() {
       
           li.innerHTML = `<input type="checkbox" class="checkbox" ${checked}>
                             ${item.name}<br>
-                            <span>${item.on}</span>
+                            <span class="ml31">${item.on}</span>
                             <button class="delete-button vertical-center">Remove</button>`;
                             
           todoItemsList.append(li);
