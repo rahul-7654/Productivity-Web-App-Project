@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <title>Schedular :: Calender</title>
     <link href="./css/main.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="./scripts/contact.js"></script>
+    
+    
+	<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	<script src="./scripts/todo.js"></script>
+	<script src="./scripts/calendar.js"></script>
 </head>
 
 <body>
     <header></header>
-
     <nav>
         <ul>
             <li><a href="index.html">To-do List</a></li>
@@ -19,61 +24,17 @@
             <li><a href="contacts.html">Contacts</a></li>
         </ul>
     </nav>
-
     <main>
-        <h1>Add New Contact</h1>
-
-        <div class="contact">
-            <form action="#" id="contactForm">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="fName">Firstname <span>*</span></label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="fName" name="fName" placeholder="Enter first name">
-                        <span class="error"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lName">Lastname <span>*</span></label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lName" name="lName" placeholder="Enter last name">
-                        <span class="error"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="mNumber">Mobile Number <span>*</span></label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="mNumber" name="mNumber" placeholder="Enter mobile number">
-                        <span class="error"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="email">Email <span>*</span></label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="email" name="email" placeholder="Enter email">
-                        <span class="error"></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
-                    <input type="button" value="Cancel" id="btnCancel">
-                </div>
-            </form>
-        </div>
-
-        <div>
+		<h1>Task<small id="today"></small></h1>
+		<div>
+			<h3>Date: <input type="text" id="my_date_picker"> </h3>
+		</div>  
+		<div id="result"></div>
+		<div>
             <p class="norecord"></p>
-            <ul class="contacts"></ul>
+            <ul class="todo-items"></ul>
         </div>
     </main>
-
     <footer></footer>
 </body>
 
