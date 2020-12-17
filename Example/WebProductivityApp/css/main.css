@@ -127,7 +127,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #ff8e71;
+    background-color: #493785;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -138,7 +138,7 @@ input[type=submit] {
 
 
 input[type=button] {
-    background-color: #bfbfbf;
+    background-color: red;
     color: white;
     padding: 12px 20px;
     border: none;

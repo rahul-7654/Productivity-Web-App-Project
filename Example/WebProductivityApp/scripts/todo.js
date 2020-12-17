@@ -13,6 +13,11 @@ $(document).ready(function() {
         todos = [];
     } 
 
+    $("#calDate").change(function(e,d) {
+      var filtered = todos.filter(todo => todo.on === e.target.value);
+      renderTodos(filtered);
+    });
+
     $("#btnAdd").click(function(){
         $("#container").show(1000);
     });
