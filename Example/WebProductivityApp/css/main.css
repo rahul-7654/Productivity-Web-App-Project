@@ -15,7 +15,7 @@ body {
 
 header {
     height: 100px;
-    background: url('../images/logo.jpg') no-repeat 25px;
+    background: url('../images/logo1.jpg') no-repeat 25px;
     margin-bottom: 18px;
 }
 
@@ -127,7 +127,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #ff8e71;
+    background-color: #20c997;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -136,9 +136,13 @@ input[type=submit] {
     float: right;
 }
 
+input[type=submit]:hover{
+    background-color: #1ba87e;
+}
+
 
 input[type=button] {
-    background-color: #bfbfbf;
+    background-color: #343a40;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -146,6 +150,10 @@ input[type=button] {
     cursor: pointer;
     float: right;
     margin-right: 5px;
+}
+
+input[type=button]:hover{
+    background-color: #23272b;
 }
 
 #container {
